@@ -19,8 +19,10 @@ The demo requires the following environment variables:
 Both should be generated on the [github](https://github.com/settings/applications/new).
 
 ```bash
-export GITHUB_CLIENT_ID=....
-export GITHUB_CLIENT_SECRET=....
+# Use your values. These serves purely for demo purposes, but still work
+# go and try out!
+export GITHUB_CLIENT_ID=5a5dba7330c099d44aa0
+export GITHUB_CLIENT_SECRET=87e30fac2d052a2d769680bd93c7e21644447253
 ```
 
 It also requires a session secret key `AU_THEN_SESSION_SECRET`:
