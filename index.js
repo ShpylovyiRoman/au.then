@@ -85,7 +85,7 @@ app.get('/logout', (req, res) => {
 
 const port = parseInt(PORT);
 app.listen(port);
-console.log(`Serving at the ${port} port`);
+console.log(`Serving on the ${port} port`);
 
 // Simple route middleware to ensure user is authenticated.
 // Use this route middleware on any resource that needs to be protected.  If
