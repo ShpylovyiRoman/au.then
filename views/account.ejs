@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Au.Then Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero is-fullheight is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="<%= user.photos[0].value %>" alt="Profile image">
+                            </figure>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4 has-text-dark">
+                                        <%= user.displayName %>
+                                    </p>
+                                    <p class="subtitle is-6 has-text-dark">
+                                        @<%= user.username %>
+                                    </p>
+                                    <p class="subtitle is-6 has-text-dark">
+                                        ID <%= user.id %>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="<%= user.profileUrl %>">
+                                    View on <span class="has-text-link">Github</span>
+                                </a>
+                            </p>
+                            <p class="card-footer-item has-text-success-dark">
+                                <a href="/logout">
+                                    Logout
+                                </a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
