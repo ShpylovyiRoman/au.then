@@ -61,3 +61,15 @@ node index.js
 - Success
   ![](images/success.png)
 
+
+## Dockerfile
+
+You can run this demo using docker and docker compose. The credentials are defined in the `docker-compose.yaml` file just for the demo purposes, but you can change them in the same way as described above.
+
+To run the demo:
+
+```bash
+$ docker compose up
+```
+
+And after building the image, go to the http://localhost:1773/ page.

@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  au-then:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+
+    environment:
+      # ATTENTION: this way of defining the secrets is INSECURE
+      # and serves only for demo purposes
+      AU_THEN_SESSION_SECRET: ${AU_THEN_SESSION_SECRET:-f99a47eef305de00b0de579c3e2dcf6debc41f96776680cade480ce3efd67a9e}
+      # INSECURE! These are test credentials only for demo purposes
+      GITHUB_CLIENT_ID: ${GITHUB_CLIENT_ID:-5a5dba7330c099d44aa0}
+      GITHUB_CLIENT_SECRET: ${GITHUB_CLIENT_SECRET:-87e30fac2d052a2d769680bd93c7e21644447253}
+      
+    ports:
+      - "1773:1773"
