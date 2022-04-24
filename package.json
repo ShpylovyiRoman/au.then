@@ -1,0 +1,21 @@
+{
+  "name": "au.then",
+  "version": "1.0.0",
+  "description": "Authentication demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ShpylovyiRoman",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.2",
+    "passport-github2": "^0.1.12"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}
